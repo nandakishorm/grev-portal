@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request with Bearer Token</title>
+</head>
+<body>
+
+<script>
+    function makeApiRequest() {
+        const apiUrl = 'http://localhost:8080/api/v1/category/all';
+        const token = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbm9ueW1vdXMiLCJpYXQiOjE3MDI5MzE4NDIsImV4cCI6MTcwMjkzMzY0Mn0.fQGnAF2cMNDgX496tzY7D_Wq2_z5W-po3fFgZpK-ak4';
+
+        fetch(apiUrl, {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json',
+                // Add other headers as needed
+            },
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('API Response:', data);
+            // Handle the API response data as needed
+        })
+        .catch(error => {
+            console.error('API Error:', error);
+            // Handle the API error as needed
+        });
+    }
+
+    // Call the function when the page loads or when a button is clicked
+    // You can trigger this function based on your UI interactions
+    makeApiRequest();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://NHA-QA-SQLRP01:1433;database=LIC
+    username: Analytics.ETL
+    password: Jet6Zyg2Wi
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+      show-sql: true # Set to true for debugging purposes, turn off in qa/prod envs
+  #  jpa:
+  #    database-platform: org.hibernate.dialect.SQLServerDialect
+  #    hibernate:
+  #      ddl-auto: none # none,validate,update,create-drop - depending on your needs
+  #      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  #    show-sql: true # Set to true for debugging purposes, turn off in production
+
+  #Email Configuration
+  mail:
+    host: smtp.outlook.com
+    port: 587
+    username: nandakishor.m@ascendlearning.com
+    password: Azure@123$
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+logging:
+  file:
+    name: /opt/publisher-services/log-file.log
+  level:
+    org.springframework: INFO
+    com.hm.grievance.publisher: DEBUG

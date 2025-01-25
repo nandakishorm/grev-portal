@@ -1,0 +1,104 @@
+{
+  "username": "admin",
+  "password": "password",
+  "firstName": "nanda",
+  "lastName": "kishore",
+  "email": "nanda@gmail.com",
+  "phone": "9484663678",
+  "active": 1
+}
+
+{
+  "username": "sunil",
+  "password": "password",
+  "firstName": "sunil",
+  "lastName": "kumar",
+  "email": "sunil@gmail.com",
+  "phone": "9478963678",
+  "active": 1
+}
+
+{
+  "username": "anonymous",
+  "password": "password",
+  "firstName": "anonymous",
+  "lastName": "anonymous",
+  "email": "anonymous@gmail.com",
+  "phone": "9988774455",
+  "active": 1
+}
+
+{
+  "username": "hm_nandakishor",
+  "password": "password",
+  "firstName": "Nanda",
+  "lastName": "KishorM",
+  "email": "nandakishor.m@ascendlearning.com",
+  "phone": "9988774455",
+  "active": 1
+}
+
+**************************************************************************************************************************
+Category:
+Update:
+{
+    "id": 1,
+    "categoryId": "82a127b3-d89c-4e66-a660-a4e958ed6da2",
+	"categoryName": "Food Court",
+    "categoryType": "General",
+    "active": 1,
+}
+
+**************************************************************************************************************************
+Posts:
+{
+  "parentPostId": null,
+  "categoryId": "ae1152da-7589-47fd-88cb-a142e761c7c1",
+  "post": "There is no parking place left today",
+  "upVotesCount": 0,
+  "isResolved": 0,
+  "isEscalated": 0,
+  "active": 1
+}
+Response:
+{
+    "id": 3,
+    "userId": "aabadf05-7707-45e3-9b18-b9fd0cdb5774",
+    "postId": "5075c9fb-d4b8-428e-a2e2-5d9beb3789af",
+    "parentPostId": null,
+    "ticketId": 57752865,
+    "categoryId": "ae1152da-7589-47fd-88cb-a142e761c7c1",
+    "post": "There is no parking place left today",
+    "upVotesCount": 0,
+    "isResolved": 0,
+    "isEscalated": 0,
+    "active": 1,
+    "dateModified": null,
+    "userModified": "anonymous"
+}
+---------------------------------------------------------------
+Reply-to Post-1:
+{
+  "parentPostId": "5075c9fb-d4b8-428e-a2e2-5d9beb3789af",
+  "categoryId": "ae1152da-7589-47fd-88cb-a142e761c7c1",
+  "post": "Yes, I had to wait for 30 mins to get a place today",
+  "upVotesCount": 0,
+  "isResolved": 0,
+  "isEscalated": 0,
+  "ticketId": 57752865,
+  "active": 1
+}
+
+Reply-to Post-2:
+{
+  "parentPostId": "5075c9fb-d4b8-428e-a2e2-5d9beb3789af",
+  "categoryId": "ae1152da-7589-47fd-88cb-a142e761c7c1",
+  "post": "Hello, we are working on the issue",
+  "upVotesCount": 0,
+  "isResolved": 0,
+  "isEscalated": 0,
+  "ticketId": 57752865,
+  "active": 1
+}
+
+**************************************************************************************************************************
